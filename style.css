@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    overflow-x: hidden;
+}
+.header-images{
+    position: relative;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo{
+    position: absolute;
+    bottom: 35%;
+    /* left: 50%; */
+    z-index: 2;
+    text-align: center;
+    width: 80px;
+}
+
+/* Snippet */
+.snippet{
+    width: 100%;
+    text-align: center;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+.snippet-text h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+.snippet-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    padding: 2rem 0;
+}
+.download-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.button{
+    padding: .5rem 1.25rem;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn-ios{
+    background-color: hsl(171, 66%, 44%);
+}
+.btn-ios:hover, .btn-ios:active{
+    box-shadow: 0px 2px 0px hsl(171, 58%, 25%) ;
+}
+.btn-mac{
+    background-color: hsl(233, 100%, 69%);
+}
+.btn-mac:hover, .btn-mac:active{
+    box-shadow: 0px 2px 0px hsl(234, 53%, 28%);
+}
+
+/* Track */
+
+.track{
+    margin-top: 50px;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.track-text h3{
+    font-size: 2.25rem;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    padding: 2rem 0;
+}
+.track-text p{
+    font-size: 1rem;
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+}
+
+/* Desktop */
+.desktop{
+    padding: 50px 0;
+    margin-right: 10%;
+}
+.desktop-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.computer-image{
+    position: relative;
+    left: -100px;
+}
+.computer{
+    width: 100%;
+}
+.desktop-feature{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.desktop-feature-card{
+    width: 80%;
+    margin: 0 auto;
+}
+.desktop-feature-card h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+.desktop-feature-card p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:hsl(201, 11%, 66%);
+    padding: .5rem 0;
+}
+
+/* ClipBoard */
+.clipboard{
+    margin-top: 50px;
+}
+.clipboard-text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0;
+}
+.clipboard-text h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color:hsl(210, 10%, 33%);
+    padding: 20px 0;
+}
+.clipboard-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:hsl(201, 11%, 66%);
+    margin-bottom: 20px;
+}
+.device-image{
+    width: 80%;
+    margin: 0 auto;
+}
+.device{
+    width: 100%;
+}
+
+/* Workflow */
+.workflow{
+    padding: 3rem 0;
+}
+.workflow-text{
+    text-align: center;
+}
+.workflow-text h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    padding: 15px 0;
+}
+.workflow-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    /* margin-bottom: 20px; */
+}
+.workflow-feature{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+.feature-card{
+    width: 35%;
+}
+.feature-card + .feature-card{
+    margin-left: 10px;
+}
+.feature-card h3{
+    color: hsl(210, 10%, 33%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .75rem 0;
+}
+.feature-card p{
+    color: hsl(201, 11%, 66%);
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* Company */
+.company{
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+.company-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+.company-main img{
+    width: 18%;
+}
+
+/* Download */
+.download{
+    padding: 3rem 0;
+}
+.download-text{
+    text-align: center;
+}
+.download-text h2{
+    color: hsl(210, 10%, 33%);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.download-text p{
+    color: hsl(201, 11%, 66%);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1.5rem 0;
+    margin-bottom: 20px;
+}
+
+/* footer */
+.footer{
+    padding: 20px 0;
+    background-color: hsl(201, 11%, 66%);
+    color: hsl(210, 10%, 33%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.footer-logo{
+    width: 40px;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-handle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/*  */
+
+.attribution {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  /* Mobile */
+
+@media (max-width: 768px){
+    .container{
+        width: 80%;
+    }
+    .download-buttons{
+        flex-direction: column;
+    }
+    /* Desktop */
+    .desktop{
+        margin-right: 0;
+    }
+    .desktop-main{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .desktop-feature{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .computer-image{
+        position: static;
+    }
+
+    /* Workflow */
+
+    .workflow-feature{
+        margin: 20px 0;
+        flex-direction: column;
+    }
+    .feature-card{
+        width: 80%;
+        padding: 1rem 0;
+    }
+
+    /* Company */
+
+    .company-main{
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    /* Footer */
+    .footer-main{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+    .list{
+        font-size: 1.25rem;
+        font-weight: 500;
+        gap: 15px;
+    }
+}
