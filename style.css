@@ -3,12 +3,19 @@
     margin: 0;
     padding: 0;
 }
+h2,h3,p{
+    font-family:'Bai jamjuree', sans-serif;
+}
 .header{
     width: 100%;
     overflow-x: hidden;
 }
 .header-images{
     position: relative;
+    width: 100%;
+}
+.background-image{
+    width: 100%;
 }
 .header-logo{
     display: flex;
@@ -31,7 +38,12 @@
     text-align: center;
 }
 .container{
-    width: 60%;
+    width: 80%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+.snippet-text{
+    max-width: 600px;
     margin: 0 auto;
 }
 .snippet-text h2{
@@ -57,19 +69,23 @@
     border: none;
     color: white;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
+    font-family:'Bai jamjuree', sans-serif;
+    cursor: pointer;
 }
 .btn-ios{
     background-color: hsl(171, 66%, 44%);
 }
 .btn-ios:hover, .btn-ios:active{
-    box-shadow: 0px 2px 0px hsl(171, 58%, 25%) ;
+    box-shadow: 0px 2px 0px hsl(171, 58%, 25%);
+    transition: ease-in-out .3s;
 }
 .btn-mac{
     background-color: hsl(233, 100%, 69%);
 }
 .btn-mac:hover, .btn-mac:active{
     box-shadow: 0px 2px 0px hsl(234, 53%, 28%);
+    transition: ease-in-out .3s;
 }
 
 /* Track */
@@ -79,7 +95,10 @@
     text-align: center;
     padding: 2rem 0;
 }
-
+.track-text{
+    max-width: 600px;
+    margin: 0 auto;
+}
 .track-text h3{
     font-size: 2.25rem;
     color: hsl(210, 10%, 33%);
@@ -100,8 +119,10 @@
 .desktop-main{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .computer-image{
     position: relative;
@@ -135,8 +156,13 @@
 .clipboard{
     margin-top: 50px;
 }
+.clipboard-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .clipboard-text{
     width: 80%;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
     padding: 1rem 0;
@@ -165,8 +191,13 @@
 .workflow{
     padding: 3rem 0;
 }
+.workflow-main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .workflow-text{
     text-align: center;
+    margin-bottom: 65px;
 }
 .workflow-text h2{
     font-size: 2rem;
@@ -214,19 +245,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .company-main img{
-    width: 18%;
+    max-width: calc(100% / 5);
+    height: auto;
 }
 
 /* Download */
 .download{
     padding: 3rem 0;
 }
+.download-main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .download-text{
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 .download-text h2{
     color: hsl(210, 10%, 33%);
@@ -254,6 +294,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .footer-logo{
     width: 40px;
@@ -329,8 +371,6 @@
     /* Company */
 
     .company-main{
-        width: 80%;
-        margin: 0 auto;
         flex-direction: column;
     }
 
